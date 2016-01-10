@@ -34,7 +34,7 @@
 			self.startAngle		= other.startAngle;
 			self.endAngle		= other.endAngle;
 			self.fillColor		= other.fillColor;
-			self.circleWidth	= other.circleWidth;
+			self.circleLineWidth	= other.circleLineWidth;
 		}
 	}
 	return self;
@@ -75,7 +75,7 @@
 	CGPoint center = CGPointMake(self.bounds.size.width / 2.0, self.bounds.size.height / 2.0);
 	
 	CGFloat outerRadius	= MIN(center.x, center.y);
-	CGFloat innerRadius	= outerRadius - ((self.circleWidth > radius) ? radius : self.circleWidth);
+	CGFloat innerRadius	= outerRadius - ((self.circleLineWidth > radius) ? radius : self.circleLineWidth);
 	
 	CGContextBeginPath(ctx);
 	

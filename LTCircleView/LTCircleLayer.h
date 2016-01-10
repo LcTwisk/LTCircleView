@@ -13,7 +13,7 @@
 
 @property (nonatomic) CGFloat startAngle;
 @property (nonatomic) CGFloat endAngle;
-@property (nonatomic) CGFloat circleWidth;
+@property (nonatomic) CGFloat circleLineWidth;
 @property (nonatomic) CGFloat animationDuration;
 
 @property (nonatomic, strong) UIColor *fillColor;

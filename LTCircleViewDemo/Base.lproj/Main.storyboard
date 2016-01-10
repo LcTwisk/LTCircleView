@@ -28,11 +28,11 @@
                                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9FO-Jl-JkD">
                                             <rect key="frame" x="193" y="8" width="167.5" height="31"/>
                                             <connections>
-                                                <action selector="circleWidthSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="1oS-PY-mGG"/>
+                                                <action selector="circleLineWidthSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="1oS-PY-mGG"/>
                                             </connections>
                                         </slider>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Circle width" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEL-jo-wAW">
-                                            <rect key="frame" x="16" y="8" width="163.5" height="20.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Circle line width" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEL-jo-wAW">
+                                            <rect key="frame" x="16" y="8" width="163.5" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -153,8 +153,8 @@
                     <connections>
                         <outlet property="animationDurationSlider" destination="azM-lx-1tI" id="PWB-ho-LaK"/>
                         <outlet property="circleHeight" destination="xJK-E6-4k6" id="4Hb-QH-gBj"/>
+                        <outlet property="circleLineWidthSlider" destination="9FO-Jl-JkD" id="VOW-Wh-Mcd"/>
                         <outlet property="circleView" destination="Hfa-zb-SiW" id="Kyb-3g-5Hg"/>
-                        <outlet property="circleWidthSlider" destination="9FO-Jl-JkD" id="VOW-Wh-Mcd"/>
                         <outlet property="tableView" destination="gA3-Qf-rm1" id="8tX-7Q-3Vq"/>
                     </connections>
                 </viewController>

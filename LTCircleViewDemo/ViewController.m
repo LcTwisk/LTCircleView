@@ -17,7 +17,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *circleHeight;
 
-@property (weak, nonatomic) IBOutlet UISlider *circleWidthSlider;
+@property (weak, nonatomic) IBOutlet UISlider *circleLineWidthSlider;
 @property (weak, nonatomic) IBOutlet UISlider *animationDurationSlider;
 
 @property (strong, nonatomic) NSNumberFormatter *numberFormatter;
@@ -32,13 +32,13 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
-	self.circleView.circleWidth = 32.0;
+	self.circleView.circleLineWidth = 32.0;
 	self.circleView.animationDuration = 0.3;
 	self.circleView.delegate = self;
 	
-	self.circleWidthSlider.minimumValue = 1.0;
-	self.circleWidthSlider.maximumValue = 125.0;
-	self.circleWidthSlider.value = 32.0;
+	self.circleLineWidthSlider.minimumValue = 1.0;
+	self.circleLineWidthSlider.maximumValue = 125.0;
+	self.circleLineWidthSlider.value = 32.0;
 	
 	self.animationDurationSlider.minimumValue = 0.0;
 	self.animationDurationSlider.maximumValue = 1.0;
@@ -104,9 +104,9 @@
 
 #pragma mark - Actions
 
-- (IBAction)circleWidthSliderChanged:(UISlider *)slider
+- (IBAction)circleLineWidthSliderChanged:(UISlider *)slider
 {
-	self.circleView.circleWidth = slider.value;
+	self.circleView.circleLineWidth = slider.value;
 	[self.circleView reloadData];
 }
 

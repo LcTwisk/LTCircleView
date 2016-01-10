@@ -21,8 +21,8 @@
 
 @property (weak, nonatomic) id<LTCircleViewDataSource> delegate;
 
-/* Width of the circle, default value is 32.0 */
-@property (nonatomic) CGFloat circleWidth;
+/* Width of the line used to draw the circle, default value is 32.0 */
+@property (nonatomic) CGFloat circleLineWidth;
 
 /* Duration of the animation, default value is 0.5  */
 @property (nonatomic) CGFloat animationDuration;

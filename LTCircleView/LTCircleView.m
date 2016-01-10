@@ -74,7 +74,7 @@
 
 - (void)setDefaultProperties
 {
-	self.circleWidth = 32.0;
+	self.circleLineWidth = 32.0;
 	self.animationDuration = 0.5;
 }
 
@@ -136,7 +136,7 @@
 		LTCircleItem *item		= [self.circleItems objectAtIndex:i];
 		LTCircleLayer *layer	= (LTCircleLayer *)[self.layer.sublayers objectAtIndex:i];
 		
-		layer.circleWidth		= self.circleWidth;
+		layer.circleLineWidth		= self.circleLineWidth;
 		layer.animationDuration = self.animationDuration;
 		layer.fillColor			= item.color;
 		layer.frame				= self.bounds;
@@ -161,9 +161,9 @@
 
 #pragma mark - Setters
 
-- (void)setCircleWidth:(CGFloat)circleWidth
+- (void)setcircleLineWidth:(CGFloat)circleLineWidth
 {
-	_circleWidth = circleWidth;
+	_circleLineWidth = circleLineWidth;
 	[self layoutSubviews];
 }
 
